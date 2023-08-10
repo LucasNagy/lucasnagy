@@ -62,7 +62,8 @@ a,a:visited {
     font-weight: 700;
 }
 .lucas-container>#lucas {
-    width: 50%;
+    width: 48%;
+    z-index: 999;
 }
 .lucas-container {
     display: flex;
@@ -74,4 +75,11 @@ a,a:visited {
     top: 0;
     left: 0;
     transform: translateZ(-1px);
+}
+.social {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem 6rem 3rem 6rem;
+    font-weight: 800;
+    word-spacing: 1.656rem;
 }
