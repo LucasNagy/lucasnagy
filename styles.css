@@ -1,18 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     background-color: #011313;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax-layer.banner {
+    width: 100%;
+    height: 100rem;
+}
+.parallax-layer.lucas-container {
+    top: 10rem;
+    width: 100%;
+    height: 50rem;
 }
 a,a:visited {
-    color: rgb(235, 235, 235);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .banner {
-    width: 100vw;
+    width: 100%;
     height: 132vh;
     position: relative;
+    transform: translateZ(0)
 }
-.banner>img {
+.banner>#banner {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,8 +51,27 @@ a,a:visited {
     z-index: -999;
 }
 .topbar {
-    width: 100%;
-    height: 6%;
+    width: calc(100%-10rem);
+    padding: 3.5rem 4.5rem 3.5rem 4.5rem;
     background-color: rgba(255, 228, 196, 0);
     text-align: right;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+.lucas-container>#lucas {
+    width: 50%;
+}
+.lucas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(-1px);
 }
