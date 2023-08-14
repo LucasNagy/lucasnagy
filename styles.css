@@ -15,7 +15,7 @@ body {
     position: relative;
     transform: translateZ(0)
 }
-.banner>#banner {
+.banner>#banner>img {
     position: absolute;
     top: 0;
     left: 0;

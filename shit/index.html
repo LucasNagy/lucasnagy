@@ -8,16 +8,51 @@
     <link rel="stylesheet" href="/global.css">
 </head>
 <body>
+
     <div class="topbar">
         <a href="/">home</a>
     </div>
-    <p class="title">(WIP) PHOTOCOLLAGES -></p>
-    <div class="photos">
-        <img src="/files/images/Collage2.jpg" alt="collage with a lot of photos">
-        <img src="/files/images/Collage3.jpg" alt="another collage with more photos">
-    </div>
-    <div class="footer">
+
+
+    <p class="title">PHOTOCOLLAGES</p>
+
+    
+    <picture id="Collage3">
+        <source srcset="/files/images/Collage3/500h.webp" media="(min-width: 5000px)" type="image/webp" />
+        <source srcset="/files/images/Collage3/250h.webp" media="(min-width: 2500px)" type="image/webp" />
+        <source srcset="/files/images/Collage3/500h.jpg" media="(min-width: 5000px)" type="image/jpeg" />
+        <source srcset="/files/images/Collage3/250h.jpg" media="(min-width: 2500px)" type="image/jpeg" />
+        <img src="/files/images/Collage3/250h.jpg" alt="a collage of people" />
+    </picture>
+
+    <picture id="Collage2">
+        <source srcset="/files/images/Collage2/500h.webp" media="(min-width: 5000px)" type="image/webp" />
+        <source srcset="/files/images/Collage2/250h.webp" media="(min-width: 1750px)" type="image/webp" />
+        <source srcset="/files/images/Collage2/500h.jpg" media="(min-width: 5000px)" type="image/jpeg" />
+        <source srcset="/files/images/Collage2/250h.jpg" media="(min-width: 1750px)" type="image/jpeg" />
+        <img src="/files/images/Collage2/250h.jpg" alt="a collage of some people" />
+    </picture>
+
+    <picture id="Collage">
+        <source srcset="/files/images/Collage/500h.webp" media="(min-width: 3500px)" type="image/webp" />
+        <source srcset="/files/images/Collage/250h.webp" media="(min-width: 2500px)" type="image/webp" />
+        <source srcset="/files/images/Collage/500h.jpg" media="(min-width: 3500px)" type="image/jpeg" />
+        <source srcset="/files/images/Collage/250h.jpg" media="(min-width: 2500px)" type="image/jpeg" />
+        <img src="/files/images/Collage/250h.jpg" alt="a collage of stuff" />
+    </picture>
+
+    <picture id="Coll">
+        <source srcset="/files/images/Coll/500h.webp" media="(min-width: 4998px)" type="image/webp" />
+        <source srcset="/files/images/Coll/250h.webp" media="(min-width: 2499px)" type="image/webp" />
+        <source srcset="/files/images/Coll/500h.jpg" media="(min-width: 4998px)" type="image/jpeg" />
+        <source srcset="/files/images/Coll/250h.jpg" media="(min-width: 2499px)" type="image/jpeg" />
+        <img src="/files/images/Coll/250h.jpg" alt="a collage of event" />
+    </picture>
+
+
+    <footer>
         <p>Lucas B Nagy<br>lucas@nagy.eu <span>2023</span></p>
-    </div>
+    </footer>
+
 </body>
 </html>
