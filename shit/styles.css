@@ -1,7 +1,7 @@
 body {
     color: rgb(237, 233, 212);
     text-decoration: none;
-    font-size: 7rem;
+    font-size: 4rem;
     font-family: 'Kanit', sans-serif;
     font-weight: 900;
     background-color: #050505;
@@ -10,7 +10,7 @@ body {
 .title {
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 #Collage3>img {
     width: 100%;
@@ -30,4 +30,5 @@ body {
 #Coll>img {
     width: 100%;
     display: block;
+    padding: 0 0 1.5rem 0;
 }
