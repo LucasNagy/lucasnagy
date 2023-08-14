@@ -15,10 +15,17 @@
         <a href="/shit">bild</a>
     </div>
 
-    
 
     <div class="banner">
-        <img id="banner" src="/files/images/smaller/banner_s.jpg" alt="a red background of a car interior">
+        <picture id="banner">
+            <source srcset="/files/images/banner/3840w.webp" media="(min-width: 3840px)" type="image/webp" />
+            <source srcset="/files/images/banner/2560w.webp" media="(min-width: 2560px)" type="image/webp" />
+            <source srcset="/files/images/banner/1920w.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="/files/images/banner/3840w.jpg" media="(min-width: 3840px)" type="image/jpeg" />
+            <source srcset="/files/images/banner/2560w.jpg" media="(min-width: 2560px)" type="image/jpeg" />
+            <source srcset="/files/images/banner/1920w.jpg" media="(min-width: 1920px)" type="image/jpeg" />
+            <img src="/files/images/banner/1920w.jpg" alt="a red background of a car interior" />
+        </picture>
     </div>
 
     <div class="lucas-container">
@@ -50,9 +57,9 @@
     </div>
 
 
-    <div class="footer">
+    <footer>
         <p>Lucas B Nagy<br>lucas@nagy.eu <span>2023</span></p>
-    </div>
+    </footer>
 
 </body>
 </html>

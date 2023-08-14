@@ -9,12 +9,25 @@ body {
 }
 .title {
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
 }
-.photos {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
+#Collage3>img {
+    width: 100%;
+    display: block;
+    padding: 0 0 0.3rem 0;
 }
-img {
-    padding: 1rem;
-    height: 90%;
+#Collage2>img {
+    width: 100%;
+    display: block;
+    padding: 0 0 0.4rem 0;
+}
+#Collage>img {
+    width: 100%;
+    display: block;
+    padding: 0 0 0.4rem 0;
+}
+#Coll>img {
+    width: 100%;
+    display: block;
 }
