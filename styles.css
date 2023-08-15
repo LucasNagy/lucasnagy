@@ -1,19 +1,16 @@
 body {
     background-color: #011313;
-    margin: 0;
     box-sizing: border-box;
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.3rem;
-    font-family: 'Kanit', sans-serif;
     font-weight: 400;
 }
 .banner {
     width: 100%;
     height: 132vh;
     position: relative;
-    transform: translateZ(0)
 }
 .banner>#banner>img {
     position: absolute;
@@ -46,7 +43,8 @@ body {
     word-spacing: 1.656rem;
     bottom: 2.2rem;
     width: calc(100%-20rem);
-    margin: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 #youtube {
     color:#ffebeb;
