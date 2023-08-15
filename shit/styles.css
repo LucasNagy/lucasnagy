@@ -2,33 +2,47 @@ body {
     color: rgb(237, 233, 212);
     text-decoration: none;
     font-size: 4rem;
-    font-family: 'Kanit', sans-serif;
     font-weight: 900;
-    background-color: #050505;
-    margin: 0px;
+    background-color: #000000;
 }
-.title {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.notlink {
+    display: block;
+    color: rgba(255, 255, 255, 0);
+}
+.notlink:hover {
+    transform: scale(1.0);
+    transition: 0s;
+    color: white;
 }
 #Collage3>img {
     width: 100%;
     display: block;
-    padding: 0 0 0.3rem 0;
+    margin: 0 0 0.3rem 0;
 }
 #Collage2>img {
     width: 100%;
     display: block;
-    padding: 0 0 0.4rem 0;
+    margin: 0 0 0.3rem 0;
 }
 #Collage>img {
     width: 100%;
     display: block;
-    padding: 0 0 0.4rem 0;
+    margin: 0 0 0.4rem 0;
 }
 #Coll>img {
     width: 100%;
     display: block;
-    padding: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
+}
+.notlink>p {
+    font-family: 'Courier Prime', monospace;
+    position: absolute;
+    margin: 0;
+    font-size: 0.6rem;
+    font-weight: 200;
+    margin-left: 0.1rem;
+    bottom: 0;
+}
+.out>p {
+    margin-left: 1rem;
 }
