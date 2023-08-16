@@ -1,3 +1,90 @@
 body {
     background-color: black;
 }
+.topbar>a:hover {
+    transform: scale(0.9);
+    transition: 0.0001s;
+    color: hsl(0, 0%, 85%);
+}
+.playlist-container {
+    margin: 9rem 3rem 3rem 3rem;
+    grid-gap: 2rem;
+    text-align: center;
+}
+.playlist {
+    background-color: #181818;
+    border-radius: 0.7rem;
+    display: inline-block;
+    margin: 1rem;
+}
+img {
+    height: 8rem;
+    vertical-align: middle;
+    padding: 1rem;
+}
+.text {
+    display: inline;
+    vertical-align: middle;
+    font-family: CircularSpTitle;
+    font-size: 4.5rem;
+    padding: 0 2rem 0 0;
+}
+.playlist:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+}
+a:hover {
+    transform: none;
+}
+#jammies:hover {
+    color: #ec4747;
+}
+#wheep:hover {
+    color: #c01721;
+}
+#downcast:hover {
+    color: #0e1d7f;
+}
+#skiva:hover {
+    color: gray;
+}
+#strike:hover {
+    color: #ef7547;
+}
+#filmer:hover {
+    color: #921e27;
+}
+#uh:hover {
+    color: #db3633;
+}
+#nostalgia:hover {
+    color: #3f8acb;
+}
+#stream:hover {
+    color: #9147ff;
+}
+#svensk:hover {
+    color: #dde03a;
+}
+#minecraft:hover {
+    color: #3ccc4f;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+    .playlist-container {
+        margin: 4rem 0.5rem 0.5rem 0.5rem;
+    }
+    .playlist {
+        margin: 0.5rem;
+    }
+    img {
+        height: 20vw;
+        padding: 0.5rem;
+    }
+    .text {
+        font-size: 9vw;
+        padding: 0 1rem 0 0;
+    }
+
+}
