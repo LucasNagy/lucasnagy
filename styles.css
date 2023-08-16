@@ -41,7 +41,7 @@ body {
     text-align: center; 
     font-weight: 800;
     word-spacing: 1.656rem;
-    bottom: 2.2rem;
+    bottom: 0.2rem;
     width: calc(100%-20rem);
     margin-left: 10rem;
     margin-right: 10rem;
@@ -124,4 +124,27 @@ body {
     text-justify: inter-word;
     font-size: 1.4rem;
     font-weight: 200;
+}
+
+@media (min-width: 320px) and (max-width: 809px) {
+
+    .social {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        font-size: 5.3vw;
+        bottom: 2rem;
+    }
+
+    .lucas-container>#lucas {
+        width: 50%;
+    }
+}
+@media (min-width: 320px) and (max-width: 809px) {
+
+    .text>p {
+        font-size: 3.2vw;
+    }
+    .text>h1 {
+        font-size: 25vw;
+    }
 }

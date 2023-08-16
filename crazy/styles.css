@@ -27,3 +27,15 @@ main {
     font-size: 2rem;
     cursor: pointer;
 }
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+    .content {
+        margin: 4rem auto;
+    }
+    .button-grid {
+        grid-template-areas: "1";
+        grid-gap: 1.5rem;
+    }
+
+}
