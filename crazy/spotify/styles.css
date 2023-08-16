@@ -82,9 +82,87 @@ a:hover {
         height: 20vw;
         padding: 0.5rem;
     }
+    #pjammies>img {
+        height: calc(20vw*1.37);
+    }
+    #jammies>.text {
+        font-size: calc(9vw*1.37);
+        color: #ec4747;
+    }
+    #pwheep>img {
+        height: calc(20vw*1.75);
+    }
+    #wheep>.text {
+        font-size: calc(9vw*1.75);
+        color: #c01721;
+    }
+    #pdowncast>img {
+        height: calc(20vw*1.4);
+    }
+    #downcast>.text {
+        font-size: calc(9vw*1.4);
+        color: #0e1d7f;
+    }
+    #pskiva>img {
+        height: calc(20vw*2.06);
+    }
+    #skiva>.text {
+        font-size: calc(9vw*2.06);
+        color: gray;
+    }
+    #pstrike>img {
+        height: calc(20vw*1.97);
+    }
+    #strike>.text {
+        font-size: calc(9vw*1.97);
+        color: #ef7547;
+    }
+    #pfilmer>img {
+        height: calc(20vw*1.91);
+    }
+    #filmer>.text {
+        font-size: calc(9vw*1.91);
+        color: #921e27;
+    }
+    #puh>img {
+        height: calc(20vw*2.77);
+    }
+    #uh>.text {
+        font-size: calc(9vw*2.77);
+        color: #db3633;
+    }
+    #pnostalgia>img {
+        height: calc(20vw*1.44);
+    }
+    #nostalgia>.text {
+        font-size: calc(9vw*1.44);
+        color: #3f8acb;
+    }
+    #pstream>img {
+        height: calc(20vw*1.15);
+    }
+    #stream>.text {
+        font-size: calc(9vw*1.15);
+        color: #9147ff;
+    }
+    #psvensk>img {
+        height: calc(20vw*0.95);
+    }
+    #svensk>.text {
+        font-size: calc(9vw*0.95);
+        color: #dde03a;
+    }
+    #pminecraft>img {
+        height: calc(20vw*0.65);
+    }
+    #minecraft>.text {
+        font-size: calc(9vw*0.65);
+        color: #3ccc4f;
+    }
     .text {
         font-size: 9vw;
         padding: 0 1rem 0 0;
     }
-
-}
+    
+    
+}   
