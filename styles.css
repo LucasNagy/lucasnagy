@@ -112,6 +112,7 @@ body {
 .text {
     max-width: 580px;
     margin: auto;
+    padding: 0rem 4rem 10rem 4rem;
 }
 .text>h1 {
     text-align: center;
