@@ -35,6 +35,13 @@ h1 {
     z-index: 999;
 }
 
+#mail {
+    color: #3e4545;
+}
+#mail:hover {
+    transform: none;
+}
+
 a,a:visited {
     color: rgb(255, 255, 255);
     text-decoration: none;
