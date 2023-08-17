@@ -12,6 +12,12 @@ body {
     row-gap: 1rem;
     justify-content: center;
 }
+h1>a{
+    text-decoration: underline;
+}
+h1>a:hover {
+    transform: none;
+}
 .lucasnagy>p {
     font-size: 1.5rem;
     text-align: left;
