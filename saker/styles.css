@@ -20,7 +20,9 @@ main {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 2.5rem 7rem;
+    height: 3rem;
+    width: 12.7rem;
+    padding: 2rem 4rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;

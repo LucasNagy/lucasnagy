@@ -1,0 +1,280 @@
+body {
+    background-color: black;
+}
+.topbar>a:hover {
+    transform: scale(0.9);
+    transition: 0.0001s;
+    color: hsl(0, 0%, 85%);
+}
+.playlist-container {
+    margin: 9rem 3rem 3rem 3rem;
+    grid-gap: 2rem;
+    text-align: center;
+    min-height: 75.2vh;
+}
+.playlist {
+    background-color: #181818;
+    border-radius: 0.7rem;
+    display: inline-block;
+    margin: calc(1rem*1);
+}
+img {
+    height: calc(8rem);
+    vertical-align: middle;
+    padding: calc(1rem*1);
+    border-radius: 1.3rem;
+}
+.text {
+    display: inline;
+    vertical-align: middle;
+    font-family: CircularSpTitle;
+    font-size: calc(4.5rem*1);
+    padding-right: calc(2rem*1);
+}
+.playlist:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+}
+a:hover {
+    transform: none;
+}
+#jammies:hover {
+    color: #000000;
+    transition: 0.35s;
+}
+.jammies:hover {
+    background-color: #902d2d;
+}
+#wheep:hover {
+    color: #c01721;
+    transition: 0.35s;
+}
+.wheep:hover {
+    background-color: hsl(0, 0%, 5%);
+}
+#downcast:hover {
+    color: #eca45a;
+    transition: 0.35s;
+}
+.downcast:hover {
+    background-color: #030722;
+}
+#skiva:hover {
+    color: rgb(25, 25, 25);
+    transition: 0.35s;
+}
+.skiva:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+#strike:hover {
+    color: #c63f1d;
+    transition: 0.35s;
+}
+.strike:hover {
+    background-color: #0d1321;
+}
+#filmer:hover {
+    color: #921e27;
+    transition: 0.35s;
+}
+.filmer:hover {
+    background-color: #0d1118;
+}
+#uh:hover {
+    color: #db3633;
+    transition: 0.35s;
+}
+.uh:hover {
+    background-color: black;
+}
+#nostalgia:hover {
+    color: #ebebeb;
+    transition: 0.35s;
+}
+.nostalgia:hover {
+    background-color: #205a88;
+}
+#stream:hover {
+    color: #ebebeb;
+    transition: 0.35s;
+}
+.stream:hover {
+    background-color: #5b25a3;
+}
+#svensk:hover {
+    color: #ebebeb;
+    transition: 0.35s;
+}
+.svensk:hover {
+    background-color: #9ea12f;
+}
+#minecraft:hover {
+    color: #ebebeb;
+    transition: 0.35s;
+}
+.minecraft:hover{
+    background-color: #1f8b4d;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+    .playlist-container {
+        margin: 4rem 0.5rem 0.5rem 0.5rem;
+    }
+    .playlist {
+        margin: 0.5rem;
+    }
+    img {
+        height: 20vw;
+        padding: 0.5rem;
+    }
+    #pjammies>img {
+        height: calc(20vw*1.32);
+        padding: calc(2vw*1.32);
+        border-radius: calc(1.3rem*0.86);
+    }
+    #jammies>.text {
+        font-size: calc(9vw*1.32);
+        padding-right: calc(4vw*1.32);
+        color: #000000;
+    }
+    .jammies {
+        background-color: #902d2d;
+    }
+    #pwheep>img {
+        height: calc(20vw*1.62);
+        padding: calc(2vw*1.62);
+        border-radius: calc(1.3rem*1.09);
+    }
+    #wheep>.text {
+        font-size: calc(9vw*1.62);
+        padding-right: calc(4vw*1.62);
+        color: #c01721;
+    }
+    .wheep {
+        background-color: hsl(0, 0%, 5%);
+    }
+    #pdowncast>img {
+        height: calc(20vw*1.33);
+        padding: calc(2vw*1.33);
+        border-radius: calc(1.3rem*1.5);
+    }
+    #downcast>.text {
+        font-size: calc(9vw*1.33);
+        padding-right: calc(4vw*1.33);
+        color: #eca45a;
+    }
+    .downcast {
+        background-color: #030722;
+    }
+    #pskiva>img {
+        height: calc(20vw*1.87);
+        padding: calc(2vw*1.87);
+        border-radius: calc(1.3rem*1.2);
+    }
+    #skiva>.text {
+        font-size: calc(9vw*1.87);
+        padding-right: calc(4vw*1.87);
+        color: rgb(25, 25, 25);
+    }
+    .skiva {
+        background-color: hsl(0, 0%, 90%);
+    }
+    #pstrike>img {
+        height: calc(20vw*1.79);
+        padding: calc(2vw*1.79);
+        border-radius: calc(1.3rem*1.1);
+    }
+    #strike>.text {
+        font-size: calc(9vw*1.79);
+        padding-right: calc(4vw*1.79);
+        color: #c63f1d;
+    }
+    .strike {
+        background-color: #0d1321;
+    }
+    #pfilmer>img {
+        height: calc(20vw*1.74);
+        padding: calc(2vw*1.74);
+        border-radius: calc(1.3rem*1.1);
+    }
+    #filmer>.text {
+        font-size: calc(9vw*1.74);
+        padding-right: calc(4vw*1.74);
+        color: #921e27;
+    }
+    .filmer {
+        background-color: #0d1118;
+    }
+    #puh>img {
+        height: calc(20vw*2.37);
+        padding: calc(2vw*2.37);
+        border-radius: calc(1.3rem*1.4);
+    }
+    #uh>.text {
+        font-size: calc(9vw*2.37);
+        padding-right: calc(4vw*2.37);
+        color: #db3633;
+    }
+    .uh {
+        background-color: hsl(0, 0%, 4%);
+    }
+    #pnostalgia>img {
+        height: calc(20vw*1.37);
+        padding: calc(2vw*1.37);
+        border-radius: calc(1.3rem*0.88);
+    }
+    #nostalgia>.text {
+        font-size: calc(9vw*1.37);
+        padding-right: calc(4vw*1.37);
+        color: #ffffff;
+    }
+    .nostalgia {
+        background-color: #205a88;
+    }
+    #pstream>img {
+        height: calc(20vw*1.12);
+        padding: calc(2vw*1.12);
+        border-radius: calc(1.3rem*0.72);
+    }
+    #stream>.text {
+        font-size: calc(9vw*1.12);
+        padding-right: calc(4vw*1.12);
+        color: #ffffff;
+    }
+    .stream {
+        background-color: #5b25a3;
+    }
+    #psvensk>img {
+        height: calc(20vw*0.99);
+        padding: calc(2vw*0.99);
+        border-radius: calc(1.3rem*0.63);
+    }
+    #svensk>.text {
+        font-size: calc(9vw*0.99);
+        padding-right: calc(4vw*0.99);
+        color: #ffffff;
+    }
+    .svensk {
+        background-color: #9ea12f;
+    }
+    #pminecraft>img {
+        height: calc(20vw*0.66);
+        padding: calc(2vw*0.66);
+        border-radius: calc(1.3rem*0.44);
+    }
+    #minecraft>.text {
+        font-size: calc(9vw*0.66);
+        padding-right: calc(4vw*0.66);
+        color: #ffffff;
+    }
+    .minecraft {
+        background-color: #1f8b4d;
+    }
+    .text {
+        font-size: 9vw;
+        padding-right: 1rem;
+    }
+    
+    
+}   

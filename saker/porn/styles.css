@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+p {
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 14rem;
+    font-weight: 100;
+}
