@@ -259,13 +259,13 @@ a:hover {
         background-color: #9ea12f;
     }
     #pminecraft>img {
-        height: calc(20vw*0.66);
-        padding: calc(2vw*0.66);
-        border-radius: calc(1.3rem*0.44);
+        height: calc(20vw*0.86);
+        padding: calc(2vw*0.86);
+        border-radius: calc(1.3rem*0.52);
     }
     #minecraft>.text {
-        font-size: calc(9vw*0.66);
-        padding-right: calc(4vw*0.66);
+        font-size: calc(9vw*0.86);
+        padding-right: calc(4vw*0.86);
         color: #ffffff;
     }
     .minecraft {
