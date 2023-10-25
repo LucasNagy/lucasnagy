@@ -5,6 +5,37 @@ body {
     font-weight: 900;
     background-color: #000000;
 }
+.filter {
+    width: 2.5rem;
+    position: absolute;
+    z-index: 999;
+    margin-left: 4rem;
+    margin-top: 7.5rem;
+    top: 0;
+    left: 0;
+}
+.filter>a>svg {
+    width: 2.5rem;
+    .cls-1 {
+        fill: #23ba85;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ededed;
+      }
+}
+.filter>a {
+    transform: none;
+    display: flex;
+}
 .notlink {
     display: block;
     color: rgba(255, 255, 255, 0);
@@ -45,4 +76,20 @@ body {
 }
 .out>p {
     margin-left: 1rem;
+}
+@media (min-width: 320px) and (max-width: 999px) {
+    .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 28vw;
+    }
+    .filter>a>svg {
+        width: 7vw;
+    }
+    .title {
+        padding-bottom: 10vw;
+    }
 }
