@@ -5,6 +5,9 @@ body {
     font-weight: 900;
     background-color: #000000;
 }
+.footerfix {
+    line-height: 445rem;
+}
 .notlink {
     display: block;
     color: rgba(255, 255, 255, 0);
