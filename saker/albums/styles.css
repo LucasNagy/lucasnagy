@@ -1,0 +1,141 @@
+body {
+    color: rgb(237, 233, 212);
+    text-decoration: none;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+
+.controls {
+    text-align: center;
+}
+
+select {
+    margin: 2rem 1rem;
+    background-color: #ede9d4;
+    border-radius: 0.2rem;
+    border-color: rgba(255, 255, 255, 0);
+    height: 1.6rem;
+    font-family: Kanit;
+    font-weight: 400;
+}
+
+.cds {
+    margin-left: 8%;
+    margin-right: 8%;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item {
+    width: calc(100vw/9);
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #cccccc00;
+}
+
+.image {
+    width: 100%;
+
+    object-fit: contain;
+}
+
+
+
+
+.title {
+    font-weight: 700;
+}
+.artist {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.year {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+.genre {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.style {
+    font-weight: 300;
+    font-size: 0.5rem;
+}
+.format {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.date{
+    font-size: 0;
+    margin: 0.7rem;
+}
+p {
+    color: azure;
+    margin: 0;
+    overflow: hidden;
+}
+footer>p {
+    color: #3e4545;
+    margin: 1rem;
+}
+
+.credits {
+    color: #4f4f4f;
+    margin: 1rem;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+.credits>a {
+    color: #4f4f4f;
+}
+
+@media (max-width: 1000px) {
+    .cds {
+      flex-direction: column;
+      align-items: center;
+    }
+    .item{
+        width: 94%;
+    }
+    .image {
+        height: initial;
+    }
+
+
+
+
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.4rem;
+    }
+    .artist {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .year {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .genre {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+    .style {
+        line-height: 2.4rem;
+        font-size: 0.9rem;
+    }
+    .format {
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+    }
+    .date{
+        font-size: 0;
+        margin: 0.7rem;
+    }
+  }
