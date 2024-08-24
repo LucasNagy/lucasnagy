@@ -52,12 +52,33 @@ a:hover {
 .wheep:hover {
     background-color: hsl(0, 0%, 5%);
 }
+#wretched:hover {
+    color: #0049d1;
+    transition: 0.35s;
+}
+.wretched:hover {
+    background-color: #0a0b0b;
+}
+#stannar:hover {
+    color: #c7af11;
+    transition: 0.35s;
+}
+.stannar:hover {
+    background-color: #0d1113;
+}
 #downcast:hover {
     color: #eca45a;
     transition: 0.35s;
 }
 .downcast:hover {
     background-color: #030722;
+}
+#physical:hover {
+    color: #4E4F41;
+    transition: 0.35s;
+}
+.physical:hover {
+    background-color: #030504;
 }
 #skiva:hover {
     color: rgb(25, 25, 25);
@@ -115,13 +136,6 @@ a:hover {
 .minecraft:hover{
     background-color: #1f8b4d;
 }
-#wretched:hover {
-    color: #0049d1;
-    transition: 0.35s;
-}
-.wretched:hover {
-    background-color: #0a0b0b;
-}
 
 
 @media (min-width: 320px) and (max-width: 999px) {
@@ -162,6 +176,32 @@ a:hover {
     .wheep {
         background-color: hsl(0, 0%, 5%);
     }
+    #pwretched>img {
+        height: calc(20vw*1.37);
+        padding: calc(2vw*1.37);
+        border-radius: calc(1.3rem*0.91);
+    }
+    #wretched>.text {
+        font-size: calc(9vw*1.37);
+        padding-right: calc(4vw*1.37);
+        color: #0049d1;
+    }
+    .wretched {
+        background-color: #0a0b0b;
+    }
+    #pstannar>img {
+        height: calc(20vw*1.58); 
+        padding: calc(2vw*1.58);
+        border-radius: calc(1.3rem*1.05);
+    }
+    #stannar>.text {
+        font-size: calc(9vw*1.58);
+        padding-right: calc(4vw*1.58);
+        color: #c7af11;
+    }
+    .stannar {
+        background-color: #0d1113;
+    }
     #pdowncast>img {
         height: calc(20vw*1.33);
         padding: calc(2vw*1.33);
@@ -174,6 +214,19 @@ a:hover {
     }
     .downcast {
         background-color: #030722;
+    }
+    #pphysical>img {
+        height: calc(20vw*1.29);
+        padding: calc(2vw*1.29);
+        border-radius: calc(1.3rem*0.86);
+    }
+    #physical>.text {
+        font-size: calc(9vw*1.29);
+        padding-right: calc(4vw*1.29);
+        color: #4E4F41;
+    }
+    .physical {
+        background-color: #030504;
     }
     #pskiva>img {
         height: calc(20vw*1.87);
@@ -283,18 +336,6 @@ a:hover {
         font-size: 9vw;
         padding-right: 1rem;
     }
-    #pwretched>img {
-        height: calc(20vw*1.4);
-        padding: calc(2vw*1.3);
-        border-radius: calc(1.3rem*0.85);
-    }
-    #wretched>.text {
-        font-size: calc(9vw*1.4);
-        padding-right: calc(4vw*1.4);
-        color: #0049d1;
-    }
-    .wretched {
-        background-color: #0a0b0b;
-    }
+
     
 }   
