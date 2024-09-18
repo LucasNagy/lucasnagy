@@ -50,26 +50,33 @@ select {
 
 .title {
     font-weight: 700;
+    font-size: 13pt;
+    line-height: 15pt;
 }
 .artist {
-    font-weight: 400;
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 11pt;
+    line-height: 13pt;
 }
 .year {
-    font-weight: 700;
-    font-size: 0.7rem;
+    font-weight: 500;
+    font-size: 10pt;
+    line-height: 12pt;
 }
 .genre {
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 9pt;
+    line-height: 11pt;
 }
 .style {
     font-weight: 300;
-    font-size: 0.5rem;
+    font-size: 7pt;
+    line-height: 9pt;
 }
 .format {
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 9pt;
+    line-height: 11pt;
 }
 .date{
     font-size: 0;
@@ -111,28 +118,28 @@ footer>p {
 
 
     .title {
-        font-size: 2.5rem;
-        line-height: 2.4rem;
+        font-size: 32pt;
+        line-height: 30pt;
     }
     .artist {
-        font-size: 1.8rem;
-        line-height: 2.4rem;
+        font-size: 28pt;
+        line-height: 26pt;
     }
     .year {
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 24pt;
+        line-height: 22pt;
     }
     .genre {
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        font-size: 20pt;
+        line-height: 20pt;
     }
     .style {
-        line-height: 2.4rem;
-        font-size: 0.9rem;
+        line-height: 16pt;
+        font-size: 18pt;
     }
     .format {
-        line-height: 2.4rem;
-        font-size: 1.5rem;
+        line-height: 20pt;
+        font-size: 18pt;
     }
     .date{
         font-size: 0;

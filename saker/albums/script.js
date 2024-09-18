@@ -122,15 +122,15 @@ function generate_albums(data){
 		title_elem.className = "title";
 		entire.appendChild(title_elem);
 
-		let year_elem = document.createElement("p");
-		year_elem.innerHTML = year;
-		year_elem.className = "year";
-		entire.appendChild(year_elem);
-
 		let artist_elem = document.createElement("p");
 		artist_elem.innerHTML = artists;
 		artist_elem.className = "artist";
 		entire.appendChild(artist_elem);
+
+		let year_elem = document.createElement("p");
+		year_elem.innerHTML = year;
+		year_elem.className = "year";
+		entire.appendChild(year_elem);
 
 		let genre_elem = document.createElement("p");
 		genre_elem.innerHTML = genres;
