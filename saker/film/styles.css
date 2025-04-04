@@ -1,0 +1,31 @@
+body {
+    background-color: #011313;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.grid>div {
+    display: flex;
+    flex-direction: column;
+}
+iframe {
+    border-radius: 0.7rem;
+}
+
+@media (min-width: 320px) and (max-width: 1220px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+    iframe {
+        width: 90vw;
+        height: 50vw;
+    }
+}

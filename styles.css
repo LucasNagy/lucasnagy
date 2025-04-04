@@ -119,13 +119,13 @@ body {
     font-size: 8rem;
     font-weight: 700;
 }
-.text>p {
+.text>p, .text>li {
     text-align: justify;
     text-justify: inter-word;
     font-size: 1.4rem;
     font-weight: 200;
 }
-.text>p>a {
+.text>p>a, .text>li>a {
     text-decoration: underline;
 }
 .text>p>a:hover {

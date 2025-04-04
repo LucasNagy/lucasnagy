@@ -1,44 +1,102 @@
 body {
-    background-color: black;
+    background-color: #011313;
 }
-
 main {
-    min-height: 100vh;
-}
-.content{
-    max-width: 4rem;
-    margin: 7rem auto;
-}
-.button-grid {
-    display: grid;
-    grid-template-areas: "1 2";
-    grid-gap: 3rem;
-    margin: auto;
+    display: flex;
     justify-content: center;
 }
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    height: 3rem;
-    width: 12.7rem;
-    padding: 2rem 4rem;
-    text-align: center;
+.grid {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.grid>a, .grid>a:visited {
+    background-color: #162222;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    display: inline-block;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 0.6rem;
+
+    padding: 1rem;
+    width: 20rem;
+    height: 14rem;
+    justify-self: center;
+    border-radius: 0.5rem;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+.grid>a:hover {
+    padding: 0.2rem 1rem 2rem 1rem;
+
+    transform: scale(1.2);
+    transition: 0.7s ease;
 }
 
-@media (min-width: 320px) and (max-width: 999px) {
+img {
+    scale: 135%;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 
-    .content {
-        margin: 4rem auto;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.33rem;
+
+    transition: 0.4s ease;
+}
+.grid>a:hover .img-container {
+    transform: scale(0.85);
+    transition: 0.7s ease;
+}
+
+.title {
+    transition: 0.4s ease;
+}
+.grid>a:hover .title {
+    margin: 0;
+    transform: scale(0.85);
+    transition: 0.7s ease;
+}
+
+.desc {
+    margin: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.grid>a:hover .desc {
+    visibility: visible ;
+    opacity: 1;
+    transition: 0.7s ease;
+}
+@media (min-width: 320px) and (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
-    .button-grid {
-        grid-template-areas: "1";
-        grid-gap: 1.5rem;
+    .grid>a, .grid>a:visited {
+        padding: 3vw;
+        width: 80vw;
+        height: 50vw;
+        padding-bottom: 16vw;
+    }
+    .img-container {
+        height: 40vw;
+    }
+    .title {
+        margin: 1.5vw;
+    }
+    .desc {
+        visibility: visible;
+        opacity: 1;
     }
 
+    .grid>a>p {
+        font-size: 4vw;
+    }
+    .grid>a {
+        font-size: 4vw;
+    }
 }
