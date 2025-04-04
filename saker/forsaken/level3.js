@@ -180,7 +180,7 @@ export function makeLevel3(setScene) {
             }
             for (let ammoBox of this.ammoBoxes) {
                 ammoBox.update();
-                ammoBox.collisionWith(this.player, this.gun, this.ammoBoxes, this.ui);
+                ammoBox.collisionWith(this.player, this.gun, this.rifle, this.ammoBoxes, this.ui);
             }
 
             for (let zombie of this.zombies) {
