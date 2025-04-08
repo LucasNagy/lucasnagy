@@ -15,6 +15,7 @@ import DamageParticle from "./entities/particleDamage.js";
 import Bandage from "./entities/bandage.js";
 import Ammo from "./entities/ammoBox.js";
 import Shield from "./entities/shield.js";
+import CollectRifle from "./entities/collectRifle.js";
 
 import Map from "./map.js";
 import UI from "./ui.js";
@@ -28,6 +29,7 @@ export function makeLevel2(setScene) {
 
     const camera = new Camera(0, 0); 
     const player = new Player(0, 0);
+    const collectRifle = new CollectRifle(-112, 20);
 
     const gun = new Gun(0, 0);
     const rifle = new Rifle(0, 0);
@@ -49,6 +51,7 @@ export function makeLevel2(setScene) {
 
         camera: camera,
         player: player,
+        collectRifle: collectRifle,
 
         gun: gun,
         rifle: rifle,
@@ -70,6 +73,7 @@ export function makeLevel2(setScene) {
             this.loseScreen.load();
             this.minimap.load();
             this.ui.load();
+            this.collectRifle.load();
         },
         setup(savedVars) {
 
@@ -81,6 +85,7 @@ export function makeLevel2(setScene) {
             this.gun.ammoCount = savedVars.ammoCount;
             this.rifle.magCount = savedVars.rifleMagCount;
             this.rifle.ammoCount = savedVars.rifleAmmoCount;
+            this.player.ownership = savedVars.ownership;
 
             this.zombies = [];
             this.bandages = [];
@@ -91,6 +96,7 @@ export function makeLevel2(setScene) {
             this.gun.setup();
             this.rifle.setup();
             this.camera.attachTo(this.player);
+            this.collectRifle.setup();
 
             // creates zombies
             for (let l = 0; l < 15;) { // ensures they only spawn on walkable tiles - 15st
@@ -178,6 +184,9 @@ export function makeLevel2(setScene) {
                 ammoBox.update();
                 ammoBox.collisionWith(this.player, this.gun, this.rifle, this.ammoBoxes, this.ui);
             }
+
+            this.collectRifle.update();
+            this.collectRifle.collisionWith(this.player);
 
             for (let zombie of this.zombies) {
                 zombie.update(this.player);
@@ -300,6 +309,7 @@ export function makeLevel2(setScene) {
                     savedVars.ammoCount = this.gun.ammoCount;
                     savedVars.rifleMagCount = this.rifle. magCount;
                     savedVars.rifleAmmoCount = this.rifle.ammoCount;
+                    savedVars.ownership = this.player.ownership;
 
                     level3.setup(savedVars);
                     setScene("level3");
@@ -313,18 +323,27 @@ export function makeLevel2(setScene) {
             }
 
             //switch weapon
-            if (keyIsDown(49)) {
-                this.gun.active = true;
-                this.rifle.active = false;
-            } if (keyIsDown(50)) {
-                this.gun.active = false;
-                this.rifle.active = true;
+            switch (this.player.ownership) {
+                case 1:
+                    break;
+                case 2:
+                    if (keyIsDown(49)) {
+                        this.gun.active = true;
+                        this.rifle.active = false;
+                    } if (keyIsDown(50)) {
+                        this.gun.active = false;
+                        this.rifle.active = true;
+                    }
+                    break;
             }
         },
 
         draw(currentScene) {
             this.map.draw(this.map.tiles2, this.camera, this.map.tileMap2);
             push();
+
+            this.collectRifle.draw(this.camera, this.player);
+
             for (let bandage of this.bandages) {
                 bandage.draw(this.camera);
             }

@@ -11,6 +11,7 @@ export default class UI {
         this.rifleActive = loadImage("./assets/rifleactive.png");
         this.rifleInactive = loadImage("./assets/rifleinactive.png");
     }
+
     draw(player, gun, rifle, zombies, boss, bossFight) {
 
         if (gun.active) {
@@ -23,7 +24,6 @@ export default class UI {
         if (player.shield > 0) {
             shieldBar(this.maxShield, player);
         }
-
 
         if (zombies.length <= 3) {
             push();
@@ -43,15 +43,24 @@ export default class UI {
             }1
         }
 
-        if (rifle.active) {
-            weaponSlot1(this.rifleActive);
-            weaponSlot2(this.gunInactive);
-        } else {
-            weaponSlot1(this.rifleInactive);
-            weaponSlot2(this.gunActive);
-        } 
-
-
+        switch (player.ownership) {
+            case 1:
+                if (gun.active) {
+                    weaponSlot1(this.gunActive);
+                } else {
+                    weaponSlot1(this.gunInactive);
+                }
+                break;
+            case 2:
+                if (rifle.active) {
+                    weaponSlot1(this.rifleActive);
+                    weaponSlot2(this.gunInactive);
+                } else {
+                    weaponSlot1(this.rifleInactive);
+                    weaponSlot2(this.gunActive);
+                }
+                break;
+        }
     }
 }
 

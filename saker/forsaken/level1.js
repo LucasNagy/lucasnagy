@@ -78,8 +78,8 @@ export function makeLevel1(setScene) {
 
             this.gun.magCount = 1;
             this.gun.ammoCount = 20;
-            this.rifle.magCount = 2;
-            this.rifle.ammoCount = 30;
+            this.rifle.magCount = 0;
+            this.rifle.ammoCount = 0;
 
             this.zombies = [];
             this.bandages = [];
@@ -283,6 +283,7 @@ export function makeLevel1(setScene) {
                     savedVars.ammoCount = this.gun.ammoCount;
                     savedVars.rifleMagCount = this.rifle. magCount;
                     savedVars.rifleAmmoCount = this.rifle.ammoCount;
+                    savedVars.ownership = this.player.ownership;
 
                     level2.setup(savedVars); 
                     console.log('saved');
@@ -298,13 +299,20 @@ export function makeLevel1(setScene) {
 
 
             //switch weapon
-            if (keyIsDown(49)) {
-                this.gun.active = true;
-                this.rifle.active = false;
-            } if (keyIsDown(50)) {
-                this.gun.active = false;
-                this.rifle.active = true;
+            switch (this.player.ownership) {
+                case 1:
+                    break;
+                case 2:
+                    if (keyIsDown(49)) {
+                        this.gun.active = true;
+                        this.rifle.active = false;
+                    } if (keyIsDown(50)) {
+                        this.gun.active = false;
+                        this.rifle.active = true;
+                    }
+                    break;
             }
+
         },
 
         draw(currentScene) {

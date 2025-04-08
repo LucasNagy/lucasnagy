@@ -25,6 +25,8 @@ export default class Player extends Entity {
         this.hp = 100;
         this.shield = 0;
 
+        this.ownership = 1;
+
     }
     load() {
         this.spriteRef = loadImage("./assets/player.png");

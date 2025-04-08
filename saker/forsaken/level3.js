@@ -89,6 +89,7 @@ export function makeLevel3(setScene) {
             this.gun.ammoCount = savedVars.ammoCount;
             this.rifle.magCount = savedVars.rifleMagCount;
             this.rifle.ammoCount = savedVars.rifleAmmoCount;
+            this.player.ownership = savedVars.ownership;
 
             this.boss = [];
             this.zombies = [];
@@ -386,12 +387,18 @@ export function makeLevel3(setScene) {
             }
 
             //switch weapon
-            if (keyIsDown(49)) {
-                this.gun.active = true;
-                this.rifle.active = false;
-            } if (keyIsDown(50)) {
-                this.gun.active = false;
-                this.rifle.active = true;
+            switch (this.player.ownership) {
+                case 1:
+                    break;
+                case 2:
+                    if (keyIsDown(49)) {
+                        this.gun.active = true;
+                        this.rifle.active = false;
+                    } if (keyIsDown(50)) {
+                        this.gun.active = false;
+                        this.rifle.active = true;
+                    }
+                    break;
             }
 
         },

@@ -8,8 +8,9 @@ let savedVars = {
     shield: 0,
     magCount: 1,
     ammoCount: 20,
-    rifleMagCount: 2,
-    rifleAmmoCount: 30
+    rifleMagCount: 0,
+    rifleAmmoCount: 0,
+    ownership: 1
 }
 
 
