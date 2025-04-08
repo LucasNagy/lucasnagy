@@ -37,6 +37,7 @@ export function makeLevel3(setScene) {
     const zombies = [];
     const boss = [];
     let bossFinder = null;
+    let bossFinder2 = null;
 
     const bullets = [];
     const bandages = [];
@@ -381,8 +382,8 @@ export function makeLevel3(setScene) {
 
 
             for (let zombie of this.zombies) {
-                if (this.zombies.length < 4 && dist(this.player.x, this.player.y, zombie.x, zombie.y) > 100) {
-                    bossFinder = new BossFinder( zombie, this.player );
+                if (this.zombies.length < 6 && dist(this.player.x, this.player.y, zombie.x, zombie.y) > 100) {
+                    bossFinder2 = new BossFinder( zombie, this.player);
                 }
             }
 
@@ -455,7 +456,7 @@ export function makeLevel3(setScene) {
 
             for (let zombie of this.zombies) {
                 if (this.zombies.length < 6 && dist(zombie.x, zombie.y, this.player.x, this.player.y) > 100) {
-                    bossFinder.draw();
+                    bossFinder2.draw();
                 }
             }
 
