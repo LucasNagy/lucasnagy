@@ -50,14 +50,12 @@ async function fetchImages() {
 
     
     let currentPhoto = allImages[index];
-    
-    location.hash = currentPhoto;
 
     await updateViewport(currentPhoto);
 
 }
-window.addEventListener('hashchange', () => {
-    fetchImages();
+window.addEventListener('hashchange', async() => {
+    await fetchImages();
 });
 
 let imageFiles;
@@ -168,8 +166,7 @@ async function updateViewport(currentPhoto, photoIndex) {
 
         filterButton.addEventListener("click", async(e) => {
 
-            const photo = location.hash.substring(1);
-            await updateViewport(photo, imgFiletype.indexOf(filter));
+            await updateViewport(currentPhoto, imgFiletype.indexOf(filter));
         });
     });
 
