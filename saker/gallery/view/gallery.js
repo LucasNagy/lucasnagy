@@ -62,7 +62,7 @@ let imageFiles;
 let imgFiletype;
 
 async function updateViewport(currentPhoto, photoIndex) {
-    console.log(currentPhoto)
+
     let imageContainer = document.querySelector(".img-container");
     imageContainer.innerHTML= "";
 
