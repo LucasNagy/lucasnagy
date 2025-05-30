@@ -34,7 +34,7 @@ export default class Menu {
         fill(255);
         textFont('Comic Sans MS')
         textSize(4);
-        text("Version 1.4", 2, 106);
+        text("Version 1.5", 2, 106);
         pop();
     }
 }

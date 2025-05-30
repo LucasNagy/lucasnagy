@@ -186,7 +186,7 @@ export function makeLevel2(setScene) {
             }
 
             this.collectRifle.update();
-            this.collectRifle.collisionWith(this.player);
+            this.collectRifle.collisionWith(this.player, this.gun, this.rifle);
 
             for (let zombie of this.zombies) {
                 zombie.update(this.player);

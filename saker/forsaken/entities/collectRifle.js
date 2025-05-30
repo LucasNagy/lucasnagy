@@ -59,9 +59,11 @@ export default class CollectRifle extends Entity {
 
     }
 
-    collisionWith(player) {
+    collisionWith(player, gun, rifle) {
         if (dist(player.x, player.y, this.x, this.y) < this.width && player.ownership < 2) {
             player.ownership += 1;
+            gun.active = false;
+            rifle.active = true;
         }
     }
 }
