@@ -110,8 +110,9 @@ async function updateViewport(currentPhoto, photoIndex) {
         document.querySelector(".properties").innerHTML = "";
         createProperty("Dimensions:", `${image.naturalWidth}×${image.naturalHeight}`)
 
-        if (metadata.exif !== null) {
-            createProperty("Camera:", metadata.exif.model);
+        createProperty("Camera:", metadata.exif.model);
+        
+        if (metadata.exif.aperture != null) {
             createProperty("Focal Length:", metadata.exif.focal_length+"mm");
             createProperty("Aperture:", "ƒ/"+metadata.exif.aperture);
             createProperty("Shutter Speed:", metadata.exif.exposure_time);
