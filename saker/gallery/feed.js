@@ -15,9 +15,23 @@ async function fetchImages() {
 
     const imageOrder = ["cg", "bw", "edited", "raw"];
 
+    let lookup = {};
+
+    let container = document.querySelector(".container");
+
+    for (let imgName of allImages.reverse()) {
+        let linkView = document.createElement("a");
+        linkView.href = `./view#${imgName}`
+        linkView.style.backgroundImage = "url(/files/images/loading.gif)"
+        linkView.style.backgroundSize = "100%"
+
+        container.appendChild(linkView);
+
+        lookup[imgName] = linkView;
+    }
 
 
-    allImages.reverse().forEach(async imgName => {
+    for (let imgName of allImages.reverse()) {
 
         let response = await fetch(`/files/images/gallery/${imgName}/images/files.json`);
         imageFiles = await response.json();
@@ -38,14 +52,19 @@ async function fetchImages() {
 
         let image = document.createElement("img");
         image.src = `/files/images/gallery/${imgName}/images/${imageFiles[version]}`;
+        image.style.opacity = "0";
+        image.onload = () => {
+            image.style.opacity = "100%";
+        };
 
-        let linkView = document.createElement("a");
-        linkView.href = `./view#${imgName}`
-        linkView.appendChild(image);
 
-        document.querySelector(".container").appendChild(linkView);
 
-    });
+        lookup[imgName].appendChild(image);
+
+
+
+
+    };
 
 }
 

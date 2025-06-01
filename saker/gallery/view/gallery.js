@@ -103,7 +103,7 @@ async function updateViewport(currentPhoto, photoIndex) {
     // Date
     document.querySelector(".date").textContent = metadata.date;
     // Description
-    document.querySelector(".desc-content").textContent = metadata.description;
+    document.querySelector(".desc-content").innerHTML = metadata.description;
 
     //Properties
     image.onload = function () {
