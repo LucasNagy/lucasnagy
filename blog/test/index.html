@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Lucas B Nagy</title>
+    <link rel="icon" type="image/x-icon" href="/files/images/Icon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<html>
+<body>
+    
+<header>
+    <nav>
+        <div id="small-nav">
+            <ul>
+                <li>Steam</li>
+                <li>View</li>
+                <li>Friends</li>
+                <li>Games</li>
+                <li>Help</li>
+            </ul>
+            <ul id="window-btn">
+                <a class="cs-btn" href="">Notifications</a>
+                <a class="cs-btn" href="">Profile</a>
+                <a class="cs-btn" href="">–</a>
+                <a class="cs-btn" href="">☐</a>
+                <a class="cs-btn" href="">✖</a>
+                
+            </ul>
+        </div>
+
+        <ul id="big-nav">
+            <li class="cs-btn arrow"><h3>🡠</h3></li>
+            <li class="cs-btn arrow"><h3>🡢</h3></li>
+            <li><h3>STORE</h3></li>
+            <li><h3>LIBRARY</h3></li>
+            <li><h3>COMMUNITY</h3></li>
+            <li><h3>USERNAME</h3></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="side-bar">
+        <div>
+            <div>
+                <select class="cs-select" name="filters" id="tags" >
+                    <option value="games">Games</option>
+                    <option value="ost">Soundtracks</option>
+                    <option value="software">Software</option>
+                    <option value="tools">Tools</option>
+                </select>
+                <button class="cs-btn">a</button>
+                <button class="cs-btn">b</button>
+                <button class="cs-btn">c</button>
+            </div>
+            <input class="cs-input" id="input" type="input"/>
+        </div>
+        
+        <button class="cs-btn game-list"><p>– UNCATEGORIZED (2)</p></button>
+        <button class="cs-btn game"><p>Counter-Strike</p></button>
+        <button class="cs-btn game"><p>Half-Life</p></button>
+    </div>
+    <div id="main-view">
+        <div id="banner">
+            <img src="" alt="banner">
+            <h1>Counter-Strike</h1>
+        </div>
+        <div id="game-content">
+            <div id="game-btns">
+                <div id="play">
+                    <button class="cs-btn">PLAY</button>
+                    <div>
+                        <h3>LAST PLAYED</h3>
+                        <p>December 12, 2004</p>
+                    </div>
+                    <div>
+                        <h3>PLAY TIME</h3>
+                        <p>1,425 hours</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="cs-btn">Manage</button>
+                    <button class="cs-btn">Game details</button>
+                    <button class="cs-btn">Add to favorites</button>
+
+                </div>
+            </div>
+            <hr class="cs-hr" />
+            <div id="game-tabs">
+                <button class="cs-btn">Store Page</button>
+                <button class="cs-btn">Community Hub</button>
+                <button class="cs-btn">Discussions</button>
+                <button class="cs-btn">Guides</button>
+                <button class="cs-btn">Support</button>
+            </div>
+            <hr class="cs-hr" />
+            <div id="sections">
+                <div id="activity">
+                    <div>
+                        <h3>ACTIVITY</h3>
+                        <input class="cs-input" id="input" type="input" value="Say something about this game to your friends..."/>
+                    </div>
+                    <div>
+                        <h3>DEC 23, 2012</h3>
+                        <hr class="cs-hr">
+                        <div class="cs-btn">
+                            <p>SMALL UPDATE / PATCH NOTES</p>
+                            <h2>December 23, 2012 Update</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="other-content">
+                    <div>
+                        <h3>FRIENDS WHO PLAY</h3>
+                        <div class="cs-btn">
+                            <p>27 friends have played previously</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>NOTES</h3>
+                        <div class="cs-btn">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>RECORDINGS AND SCREENSHOTS</h3>
+                        <div class="cs-btn">
+                            <p>You haven't taken any screenshots yet</p>
+                            <p>You can take a screenshot by pressing F12 while in game.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MY REVIEW</h3>
+                        <div class="cs-btn">
+                            <p>You've played for 1,425 hours</p>
+                            <button class="cs-btn">Write a review for Counter-Strike</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <button class="cs-btn">Add a Game</button>
+    <button class="cs-btn">Manage Downloads</button>
+    <button class="cs-btn">Friends & Chat</button>
+</footer>
+
+</body>
+</html>
