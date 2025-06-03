@@ -211,7 +211,62 @@
 <footer>
     <button class="cs-btn">Add a Game</button>
     <button class="cs-btn">Manage Downloads</button>
-    <button class="cs-btn">Friends & Chat</button>
+    <section>
+        <button
+            type="button"
+            class="cs-btn"
+            onclick="document.querySelector('.cs-dialog').showModal();"
+        >
+            Friends & Chat
+        </button>
+        <dialog class="cs-dialog">
+            <form method="dialog">
+            <div class="heading">
+                <div class="wrapper">
+                <div class="icon"></div>
+                <p class="text">Friends & Chat</p>
+                </div>
+                <div>
+                    <button class="cs-btn open">–</button>
+                    <button class="cs-btn open">☐</button>
+                    <button class="cs-btn close"></button>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <div id="profile-card">
+                        <img src="" alt="pfp">
+                        <div>
+                            <h2>Username</h2>
+                            <p>Online</p>
+                        </div>
+                    </div>
+                    <hr class="cs-hr">
+                    <menu id="search-friends">
+                        <div>
+                            <label class="cs-input__label" for="input"><h3>FRIENDS</h3></label>
+                            <input class="cs-input" id="input" type="input" />
+                        </div>
+                        <div>
+                            <button class="cs-btn">a</button>
+                            <button class="cs-btn">b</button>
+                            <button class="cs-btn">c</button>
+                        </div>
+                    </menu>
+                    <hr class="cs-hr">
+                    <div id="friend-list">
+                        <h3>Unread Messages</h3>
+                    </div>
+                </div>
+            </div>
+            <menu class="footer-btns">
+                <button class="cs-btn">OK</button>
+                <button class="cs-btn">Cancel</button>
+                <button class="cs-btn">Apply</button>
+            </menu>
+            </form>
+        </dialog>
+    </section>
 </footer>
 
 </body>
