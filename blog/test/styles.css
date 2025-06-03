@@ -120,9 +120,14 @@ button:hover{
     align-items: center;
     line-height: 1.2;
 }
-#play>div, #play>button {
+#play>div, #play>a {
     height: 100%;
     width: 9.2rem;
+}
+#play>a {
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
 }
 #manage-game {
     display: flex;
