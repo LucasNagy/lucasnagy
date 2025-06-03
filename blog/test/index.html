@@ -32,8 +32,11 @@
         </div>
 
         <ul id="big-nav">
-            <li class="cs-btn arrow"><h3>🡠</h3></li>
-            <li class="cs-btn arrow"><h3>🡢</h3></li>
+            <div>
+                <li class="cs-btn arrow"><h3>🡠</h3></li>
+                <li class="cs-btn arrow"><h3>🡢</h3></li>
+            </div>
+            
             <li><h3>STORE</h3></li>
             <li><h3>LIBRARY</h3></li>
             <li><h3>COMMUNITY</h3></li>
@@ -81,11 +84,31 @@
                         <p>1,425 hours</p>
                     </div>
                 </div>
-                <div>
-                    <button class="cs-btn">Manage</button>
-                    <button class="cs-btn">Game details</button>
-                    <button class="cs-btn">Add to favorites</button>
-
+                <div id="manage-game">
+                    <div class="cs-tooltip">
+                        <button class="cs-btn">⚙</button>
+                        <span
+                            style="top: 100%; width: 60px; left: 50%; margin-left: -30px"
+                            class="text"
+                            >Manage</span
+                        >
+                    </div>
+                    <div class="cs-tooltip">
+                        <button class="cs-btn">🛈</button>
+                        <span
+                            style="top: 100%; width: 125px; left: 50%; margin-left: -65px"
+                            class="text"
+                            >Show game details</span
+                        >
+                    </div>
+                    <div class="cs-tooltip">
+                        <button class="cs-btn">♥</button>
+                        <span
+                            style="top: 100%; width: 110px; left: 50%; margin-left: -75px"
+                            class="text"
+                            >Add to Favorites</span
+                        >
+                    </div>
                 </div>
             </div>
             <hr class="cs-hr" />
@@ -117,12 +140,46 @@
                         <h3>FRIENDS WHO PLAY</h3>
                         <div class="cs-btn">
                             <p>27 friends have played previously</p>
+                            <div class="users-card">
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                            </div>
+                            <div class="open-content">
+                                <p>View all friends who play</p>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <h3>NOTES</h3>
                         <div class="cs-btn">
-                            <p>-</p>
+                            <div class="open-content">
+                                <p>New Note</p>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -130,13 +187,19 @@
                         <div class="cs-btn">
                             <p>You haven't taken any screenshots yet</p>
                             <p>You can take a screenshot by pressing F12 while in game.</p>
+                            <div class="open-content">
+                                <p>Change My Screenshot Key</p>
+                            </div>
                         </div>
                     </div>
                     <div>
                         <h3>MY REVIEW</h3>
                         <div class="cs-btn">
                             <p>You've played for 1,425 hours</p>
-                            <button class="cs-btn">Write a review for Counter-Strike</button>
+                            <button class="cs-btn content-btn">Write a review for Counter-Strike</button>
+                            <div class="open-content">
+                                <p>View all my reviews</p>
+                            </div>
                         </div>
                     </div>
                 </div>
