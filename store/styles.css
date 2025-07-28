@@ -1,0 +1,17 @@
+.SprdMain .sprd-header-container .sprd-social-bar {
+    display: none;
+}
+
+main {
+    margin-top: 3rem;
+}
+
+a:hover {
+    transform: none;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        margin-top: 5rem;
+    }
+}

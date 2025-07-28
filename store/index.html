@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - Lucas B Nagy</title>
+    <title>Lucas B Nagy</title>
     <link rel="icon" type="image/x-icon" href="/files/images/Icon.ico">
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="feed.js"></script>
-    <link rel="preload" href="/files/images/loading.gif">
 </head>
 <body>
-    
+
     <div class="home">
         <a href="/">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.21 85.848">
@@ -21,24 +19,36 @@
         </a>
     </div>
 
-    <div class="topbar">
-        <a href="/store">merch</a>
+    <div class="topbar">   
+        <a style="color: #00aeef" href="/store">merch</a>
         <a href="/streams">streams</a>
         <a href="/saker">saker</a>
     </div>
 
-<main>
-    <h1 class="title">PHOTO GALLERY</h1>
+    <main>
 
-    <div class="container">
+        <div id="myShop">
+            <a href="https://lucasnagy.myspreadshop.se">lucasnagy</a>
+        </div>
 
-    </div>
+        <script>
+            var spread_shop_config = {
+                shopName: 'lucasnagy',
+                locale: 'se_SE',
+                prefix: 'https://lucasnagy.myspreadshop.se',
+                baseId: 'myShop'
+            };
+        </script>
 
-</main>
+        <script type="text/javascript"
+                src="https://lucasnagy.myspreadshop.se/shopfiles/shopclient/shopclient.nocache.js">
+        </script>
 
-<footer>
-    <p>Lucas B Nagy<br><a id="mail" href="mailto:lucas@nagy.eu">lucas@nagy.eu</a> <span>2025</span></p>
-</footer>
+    </main>
+
+    <footer>
+        <p>Lucas B Nagy<br><a id="mail" href="mailto:lucas@nagy.eu">lucas@nagy.eu</a> <span>2025</span></p>
+    </footer>
 
 </body>
 </html>
