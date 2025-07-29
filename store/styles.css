@@ -9,6 +9,9 @@ main {
 a:hover {
     transform: none;
 }
+#sprd-footer {
+    background-color: #011313;
+}
 
 @media screen and (min-width: 1000px) {
     main {
