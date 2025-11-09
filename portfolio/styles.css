@@ -70,7 +70,7 @@ h1, h2, h3, h4, p, a {
 
 body {
     background-color: #080808;
-    background-image: url(/files/imgs/paper.jpg);
+    background-image: url(/files/images/portfolio/paper.jpg);
     background-position: center top;
     background-repeat: repeat;
     display: flex;
