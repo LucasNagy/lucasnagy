@@ -454,7 +454,7 @@ footer {
 
     .sc-heltin {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 3fr 3fr 2fr;
+        grid-template-rows: 21.75rem 21.75rem 14.5rem;
         grid-template-areas: 
         'logo logo icon'
         'napkin menu menu'
@@ -464,7 +464,7 @@ footer {
     }
     .sc-revinyl {
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 3fr 3fr 2fr;
+        grid-template-rows: 21.75rem 21.75rem 14.5rem;
         grid-template-areas: 
         'logo icon'
         'instagram vinyl'
@@ -474,7 +474,7 @@ footer {
     }
     .sc-bengan {
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: 6.25rem 18.75rem;
         grid-template-areas: 
         'cover logo'
         'cover artwork';
@@ -687,14 +687,17 @@ footer {
             }
         }
         .sc-heltin {
+            grid-template-rows: 24vw 24vw 16vw;
             height: 67vw;
             gap: 1.5vw;
         }
         .sc-revinyl {
+            grid-template-rows: 28.875vw 28.875vw 19.25vw;
             height: 80vw;
             gap: 1.5vw;
         }
         .sc-bengan {
+            grid-template-rows: 8.125vw 24.375vw;
             height: 34vw;
             gap: 1.5vw;
         }
@@ -742,16 +745,16 @@ footer {
             }
         }
         .sc-heltin {
+            grid-template-rows: 35.25vw 35.25vw 23.5vw;
             height: 97vw;
-            gap: 1.5vw;
         }
         .sc-revinyl {
+            grid-template-rows: 35.625vw 35.625vw 23.75vw;
             height: 98vw;
-            gap: 1.5vw;
         }
         .sc-bengan {
+            grid-template-rows: 11.625vw 34.875vw;
             height: 48vw;
-            gap: 1.5vw;
         }
         .sc-logos {
 
@@ -800,7 +803,7 @@ footer {
             height: 255vw;
             gap: 1.5vw;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+            grid-template-rows: 41.5vw 83vw 41.5vw 41.5vw 41.5vw;
             grid-template-areas: 
             "logo logo"
             "icon icon"
@@ -845,7 +848,7 @@ footer {
         }
         .sc-heltin {
             height: 159vw;
-            grid-template-rows: 1fr 0 1fr 1fr 1fr;
+            grid-template-rows: 38.625vw 0 38.625vw 38.625vw 38.625vw;
             grid-template-areas: 
             "logo logo"
             "icon icon"
@@ -856,7 +859,7 @@ footer {
         .sc-bengan {
             height: 152vw;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 5fr 2fr;
+            grid-template-rows: 16.625vw 93.125vw 37.25vw;
             grid-template-areas: 
             "logo"
             "cover"
