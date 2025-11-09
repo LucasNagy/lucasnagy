@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Shin Go';
+    font-weight: 400;
+    src: url(/files/fonts/AOTFShinGoProRegular.otf);
+} @font-face {
+    font-family: 'Shin Go';
+    font-weight: 200;
+    src: url(/files/fonts/AOTFShinGoProExLight.otf);
+} @font-face {
+    font-family: 'Shin Go';
+    font-weight: 800;
+    src: url(/files/fonts/AOTFShinGoProHeavy.otf);
+} @font-face {
+    font-family: 'Shin Go';
+    font-weight: 900;
+    src: url(/files/fonts/A-OTF\ Shin\ Go\ Pro\ U.otf);
+}
+
+@font-face {
+    font-family: 'Gc Grind';
+    src: url(/files/fonts/Gc\ Grind.otf);
+}
+
+h1 {
+    font-family: 'Gc Grind', Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 200pt;
+    display: inline-block;
+    line-height: 202pt;
+    height: 172.8pt;
+}
+h2 {
+    font-family: 'Shin Go', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 24pt;
+    line-height: 14pt;
+    height: 34pt;
+}
+h3 {
+    font-family: 'Shin Go', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18pt;
+    line-height: 25pt;
+}
+h4 {
+    font-family: 'Shin Go', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 10pt;
+    line-height: 8pt;
+    height: 10pt;
+}
+p, a {
+    font-family: 'Shin Go', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    line-height: 24pt;
+
+    text-decoration: none;
+}
+h1, h2, h3, h4, p, a {
+    color: #cccccc;
+}
+
+.black {
+    color: black;
+}
+
+body {
+    background-color: #080808;
+    background-image: url(/files/imgs/paper.jpg);
+    background-position: center top;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+}
+main {
+    margin: 1.5rem;
+    max-width: 1520px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#bkg-container {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+#bkg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top-desc {
+    padding: 2rem;
+}
+
+.border-box {
+    border-radius: 1rem;
+    border: 1px solid #cccccc;
+    padding: 2.5rem;
+}
+
+#hello {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+    'pfp about'
+    'pfp about'
+    'pfp about'
+    'pfp links'
+    'properties properties';
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+#about {
+    grid-area: about;
+    text-align: justify;
+}
+#pfp {
+    grid-area: pfp;
+    position: relative;
+    overflow: visible;
+}
+#pfp-src {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+}
+#pfp-overlay-mask {
+    position: absolute;
+    inset: 0;
+    overflow: visible;
+    pointer-events: none;
+}
+#pfp-overlay {
+    position: absolute;
+    width: 100%;
+    height: calc(100% * 2583 / 2259);
+    object-position: top center;
+    object-fit: cover;
+}
+#links {
+    grid-area: links;
+    text-align: right;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1rem;
+    justify-items: right;
+    justify-self: end;
+}
+#links>div {
+    background-color: #00aeef;
+    border-radius: 1rem;
+    padding: 0.5rem 5rem 0.7rem 5rem;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1340px) {
+    main {
+        margin: 1.8vw;
+    }
+    h1 {
+        font-size: 20vw;
+        line-height: 20.3vw;
+        height: 17.2vw;
+    }
+    p, a {
+        font-size: 1.5vw;
+        line-height: 2.2vw;
+    }
+    .border-box {
+        padding: 3vw;
+    }
+    #top-desc {
+        padding: 3vw;
+    }
+    #hello {
+        gap: 3vw;
+        margin-bottom: 3vw;
+    }
+    #links {
+        gap: 1.5vw;
+        div {
+            padding: 0.8vw 7vw 1vw 7vw;
+        }
+    }
+}
+@media screen and (max-width: 779px) {
+    main {
+        margin: 1.5rem;
+    }
+    h1 {
+        font-size: 20vw;
+        line-height: 20.2vw;
+        height: 17vw;
+    }
+    h2 {
+        font-size: 1.5rem;
+        height: 2.2rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    p, a {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .border-box {
+        padding: 2.5rem;
+    }
+    #hello {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'about'
+        'links'
+        'pfp'
+        'properties';
+    }
+    #links {
+        justify-self: center;
+        grid-template-columns: max-content max-content;
+        div {
+            padding: 0.3rem 3rem 0.4rem 3rem;
+            border-radius: 0.5rem;
+            p, a {
+                text-align: center;
+                justify-items: center;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 622px) {
+    #links {
+        grid-template-columns: max-content;
+        justify-items: center;
+        div {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    #about {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 485px) {
+    h2 {
+        font-size: 4.2vw;
+    }
+    h3 {
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+    h4 {
+        font-size: 2.7vw;
+    }
+    p, a {
+        font-size: 2.7vw;
+        line-height: 3.7vw;
+    }
+    main {
+        margin: 2.5vw;
+    }
+    #top-desc {
+        padding: 5vw;
+    }
+    .border-box {
+        padding: 5vw;
+        border-radius: 0.5rem;
+    }
+    #hello {
+        gap: 5vw;
+    }
+    #pfp>img {
+        border-radius: 0.5rem;
+    }
+    #links {
+        grid-template-columns: 1fr 1fr;
+        width: 85vw;
+        justify-items: stretch;
+        gap: 2vw;
+        div {
+            width: initial;
+            padding: 1.5vw;
+        }
+    }
+}
+
+
+
+#properties {
+    grid-area: properties;
+    display: grid;
+    /*grid-template-columns: 2fr 1fr 1fr;*/
+    /*grid-template-rows: 3fr 2fr;*/
+    grid-template-areas: 
+    'education hobby skills'
+    'software hobby language';
+    gap: 2.5rem;
+}
+#education {
+    grid-area: education;
+}
+#hobby {
+    grid-area: hobby;
+}
+#skills {
+    grid-area: skills;
+}
+#software {
+    grid-area: software;
+    div {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-items: left;
+        div {
+            display: grid;
+            gap: 0.1rem;
+            grid-template-columns: auto auto;
+            grid-template-areas:
+            'img name'
+            'img desc';
+
+            img {
+                height: 44pt;
+                grid-area: img;
+                margin-right: 0.4rem;
+            }
+            h3 {
+                grid-area: name;
+            }
+            h4 {
+                grid-area: desc;
+            }
+        }
+    }
+
+}
+#language {
+    grid-area: language;
+}
+#language, #skills, #hobby {
+    ul {
+        list-style: none;
+        list-style-position: inside;
+        li {
+            p, h4 {
+                display: inline-block;
+                padding: 0.2rem;
+            }
+        }
+        li:before {
+            font-family: "Shin Go";
+            font-weight: 900;
+            color: #cccccc;
+            content: "– ";
+        }
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    #properties {
+        grid-template-areas: 
+        'education education'
+        'software hobby'
+        'skills hobby'
+        'skills language';
+    }
+}
+@media screen and (max-width: 1070px) {
+    #properties {
+        gap: 3vw;
+        grid-template-areas: 
+        'education education'
+        'software software'
+        'hobby skills'
+        'hobby language';
+    }
+}
+@media screen and (max-width: 779px) {
+    #properties {
+        grid-template-areas:
+        'education'
+        'software'
+        'skills'
+        'hobby'
+        'language';
+    }
+    #software>div>div>img {
+        height: 2.8rem;
+    }
+}
+@media screen and (max-width: 620px) {
+    #software>div {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 485px) {
+    #properties {
+        gap: 5vw;
+    }
+    #software {
+        div {
+            gap: 2vw;
+            div {
+                gap: 0.1vw;
+                img {
+                    height: 8vw;
+                    margin-right: 1vw;
+                }
+            }
+        }
+    }
+}
+
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    h1 {
+        height: 162pt;
+    }
+}
+.sc-left {
+    grid-template-columns: 1fr 2fr;
+}
+.sc-right {
+    grid-template-columns: 2fr 1fr;
+}
+
+.showcase-content {
+    display: grid;
+    gap: 2rem;
+
+    .sc-heltin {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr 3fr 2fr;
+        grid-template-areas: 
+        'logo logo icon'
+        'napkin menu menu'
+        'window mockup app';
+        gap: 1rem;
+        height: 60rem;
+    }
+    .sc-revinyl {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 3fr 3fr 2fr;
+        grid-template-areas: 
+        'logo icon'
+        'instagram vinyl'
+        'instagram kvitto';
+        gap: 1rem;
+        height: 60rem;
+    }
+    .sc-bengan {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        'cover logo'
+        'cover artwork';
+        gap: 1rem;
+        height: 26rem;
+    }
+    .sc-logos {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'logos gamba bengan-yes'
+        'owercase heltin bengan-studios';
+        gap: 0;
+
+        div {
+            padding: 2rem;
+        }
+    }
+    .logo {
+        object-fit: contain !important;
+    }
+    .showcase-text {
+        text-align: justify;
+    }
+    .showcase-img {
+        display: grid;
+
+        img {
+            border-radius: 1rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #heltin-logo {
+            grid-area: logo;
+        }
+        #heltin-icon {
+            grid-area: icon;
+        }
+        #heltin-napkin {
+            grid-area: napkin;
+        }
+        #heltin-menu {
+            grid-area: menu;
+        }
+        #heltin-window {
+            grid-area: window;
+        }
+        #heltin-mockup {
+            grid-area: mockup;
+        }
+        #heltin-app {
+            grid-area: app;
+        }
+
+        #revinyl-logo {
+            grid-area: logo;
+        }
+        #revinyl-icon {
+            grid-area: icon;
+        }
+        #revinyl-instagram {
+            grid-area: instagram;
+        }
+        #revinyl-vinyl {
+            grid-area: vinyl;
+        }
+        #revinyl-kvitto {
+            grid-area: kvitto;
+        }
+
+        #bengan-logo {
+            grid-area: logo;
+        }
+        #bengan-cover {
+            grid-area: cover;
+        }
+        #bengan-artwork {
+            grid-area: artwork;
+        }
+
+        #logos {
+            grid-area: logos;
+            h3, h4 {
+                width: fit-content;
+            }
+            br {
+                height: 1rem;
+            }
+        }
+        #gamba {
+            grid-area: gamba;
+            border-color: #cccccc;
+            border-style: solid;
+            border-width: 2px 0 0 2px;
+        }
+        #bengan-yes {
+            grid-area: bengan-yes;
+            background-color: #cccccc;
+            border-radius: 0 1rem 0 0;
+        }
+        #owercase {
+            grid-area: owercase;
+            border-color: #cccccc;
+            border-style: solid;
+            border-width: 2px 0 2px 2px;
+            border-radius: 0 0 0 1rem;
+        }
+        #heltin {
+            grid-area: heltin;
+            background-color: #cccccc;
+        }
+        #bengan-studios {
+            grid-area: bengan-studios;
+        }
+    }
+}
+#sc-mg {
+    display: grid;
+    grid-template-areas:
+    "revinyl google"
+    "ui ui";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+
+    img {
+        border-radius: 0.5rem;
+    }
+
+    h3, h4 {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+
+    #mg-revinyl {
+        grid-area: revinyl;
+    }
+    #mg-google {
+        grid-area: google;
+        
+    }
+    #mg-ui {
+        grid-area: ui;
+        display: grid;
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas:
+        "img head"
+        "img p";
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 2rem;
+        div {
+            display: initial;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        h2, h4 {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        #mg-head {
+            grid-area: head;
+        }
+        #mg-img {
+            grid-area: img;
+        }
+        #mg-p {
+            grid-area: p;
+        }
+    }
+
+    #mg-revinyl, #mg-google {
+        flex-direction: column;
+        display: flex;
+        gap: 1rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (max-width: 1567px) {
+    .showcase {
+        gap: 3vw;
+        h1 {
+            height: 17vw;
+        }
+    }
+    .showcase-content {
+        gap: 3vw;
+        .showcase-text {
+            text-align: initial;
+            h2 {
+                font-size: 2.1vw;
+            }
+            h3 {
+                font-size: 1.55vw;
+            }
+            h4 {
+                font-size: 1.2vw;
+            }
+            p {
+                font-size: 1.35vw;
+            }
+        }
+        .sc-heltin {
+            height: 67vw;
+            gap: 1.5vw;
+        }
+        .sc-revinyl {
+            height: 80vw;
+            gap: 1.5vw;
+        }
+        .sc-bengan {
+            height: 34vw;
+            gap: 1.5vw;
+        }
+        .sc-logos {
+
+            div {
+                padding: 1.5vw;
+            }
+            #logos {
+                h3 {
+                    font-size: 1.6vw;
+                }
+                h4 {
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 1140px) {
+    .sc-left, .sc-right {
+        grid-template-columns: 1fr;
+    }
+    .sc-right {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .showcase-content {
+        .showcase-text {
+            text-align: initial;
+            h2 {
+                font-size: 4.2vw;
+                height: 2.2rem;
+            }
+            h3 {
+                font-size: 2.4vw;
+            }
+            h4 {
+                font-size: 1.4vw;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .sc-heltin {
+            height: 97vw;
+            gap: 1.5vw;
+        }
+        .sc-revinyl {
+            height: 98vw;
+            gap: 1.5vw;
+        }
+        .sc-bengan {
+            height: 48vw;
+            gap: 1.5vw;
+        }
+        .sc-logos {
+
+            div {
+                padding: 1.5vw;
+            }
+            #logos {
+                h3 {
+                    font-size: 2.6vw;
+                    line-height: 3.6vw;
+                }
+                h4 {
+                    font-size: 1.4vw;
+                }
+            }
+        }
+    }
+    #sc-mg {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+
+        #mg-ui {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "head"
+            "img"
+            "p";
+            gap: 1rem;
+        }
+
+        h3 {
+            font-weight: 2.4vw;
+        }
+        p {
+            font-size: 10pt;
+            font-weight: 200;
+        }
+    }
+}
+@media screen and (max-width: 779px) {
+    .showcase-content {
+        .sc-heltin {
+            height: 255vw;
+            gap: 1.5vw;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "logo logo"
+            "icon icon"
+            "menu menu"
+            "napkin window"
+            "mockup app";
+        }
+    }
+
+    #sc-mg {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (max-width: 485px) {
+    .showcase-content {
+        .showcase-img {
+            img {
+                border-radius: 0.5rem;
+            }
+            #owercase {
+                border-radius: 0 0 0 0.4rem;
+            }
+            #bengan-yes {
+                border-radius: 0 0.4rem 0 0;
+            }
+        }
+        .showcase-text {
+            text-align: initial;
+            h3 {
+                font-size: 3vw;
+                line-height: 3.5vw;
+            }
+            h4 {
+                font-size: 2.7vw;
+            }
+            p {
+                font-size: 2.7vw;
+                line-height: 3.7vw;
+            }
+        }
+        .sc-heltin {
+            height: 159vw;
+            grid-template-rows: 1fr 0 1fr 1fr 1fr;
+            grid-template-areas: 
+            "logo logo"
+            "icon icon"
+            "menu menu"
+            "napkin window"
+            "mockup app";
+        }
+        .sc-bengan {
+            height: 152vw;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 5fr 2fr;
+            grid-template-areas: 
+            "logo"
+            "cover"
+            "artwork";
+        }
+        .sc-logos {
+            #logos {
+                h3 {
+                    line-height: 2.6vw;
+                }
+            }
+        }
+    }
+
+}
