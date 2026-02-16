@@ -662,6 +662,13 @@ footer {
         }
     }
 }
+#sc-fe>div {
+    display: flex;
+    align-items: center;
+    h2, h4 {
+        margin-right: 0.5rem;
+    }
+}
 @media screen and (max-width: 1567px) {
     .showcase {
         gap: 3vw;
