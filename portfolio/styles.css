@@ -432,6 +432,48 @@ footer {
     }
 }
 
+.showcase-self {
+    display: grid;
+    grid-template-areas:
+    "desc desc"
+    "appear spin";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    h4  {
+        grid-area: desc;
+    }
+}
+
+#appear-gif, #spin-gif {
+    width: 100%;
+
+}
+#appear-gid {
+    grid-area: appear;
+}
+#spin-gif {
+    grid-area: spin;
+}
+
+@media screen and (max-width: 1567px) {
+    .showcase-self>h4 {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .showcase-self {
+        margin-bottom: 5vw;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .showcase-self>h4 {
+        font-size: 1.4vw;
+    }
+}
 
 .showcase {
     display: flex;
@@ -480,6 +522,16 @@ footer {
         'cover artwork';
         gap: 1rem;
         height: 26rem;
+    }
+    .sc-2stage {
+        grid-template-columns: fr 2fr;
+        grid-template-rows: 21.75rem 14.5rem;
+        grid-template-areas: 
+        'web logo'
+        'tee badge'
+        'tee badge';
+        gap: 1rem;
+        height: 63rem;
     }
     .sc-logos {
         grid-template-columns: 1fr 1fr 1fr;
@@ -555,6 +607,19 @@ footer {
         }
         #bengan-artwork {
             grid-area: artwork;
+        }
+
+        #stage2-web {
+            grid-area: web;
+        }
+        #stage2-logo {
+            grid-area: logo;
+        }
+        #stage2-tee {
+            grid-area: tee;
+        }
+        #stage2-badge {
+            grid-area: badge;
         }
 
         #logos {
@@ -708,6 +773,11 @@ footer {
             height: 34vw;
             gap: 1.5vw;
         }
+        .sc-2stage {
+            grid-template-rows: 34.875vw 26.25vw;
+            height: 76vw;
+            gap: 1.5vw;
+        }
         .sc-logos {
 
             div {
@@ -762,6 +832,10 @@ footer {
         .sc-bengan {
             grid-template-rows: 11.625vw 34.875vw;
             height: 48vw;
+        }
+        .sc-2stage {
+            grid-template-rows: 35.625vw 23.75vw;
+            height: 98vw;
         }
         .sc-logos {
 
