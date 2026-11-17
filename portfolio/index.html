@@ -21,13 +21,20 @@
                 I love all things visual. I am passionate about pushing my boundaries and exporing new skills.</p>
             </div>
             <div id="pfp">
-                <img id="pfp-src" src="/files/images/portfolio/pfp.png" alt="picture of me">
+                <img id="pfp-src" alt="picture of me">
                 <div id="pfp-overlay-mask">
-                    <img id="pfp-overlay" src="/files/images/portfolio/pfp-hover.png">
+                    <img id="pfp-overlay">
+                    <script> 
+                        let n = Math.floor(Math.random() * 2)
+                        document.getElementById("pfp-overlay").src = "/files/images/portfolio/pfp-hover_" +
+                        n + ".png";
+                        document.getElementById("pfp-src").src = "/files/images/portfolio/pfp_" +
+                        n + ".png";
+                    </script>
                 </div>
             </div>
             <div id="links">
-                <div><a href="tel:+46720544661" class="black">+46 720 544 661</a></div>
+                <div><a href="tel:+46720544661" class="black">+46 720 544 661</a></div> 
                 <div><a href="mailto:lucas@nagy.eu" class="black">lucas@nagy.eu</a></div>
                 <div><a href="https://lucas.nagy.eu" class="black">lucas.nagy.eu</a></div>
                 <div><p class="black">@lucasnagy05</p></div>
